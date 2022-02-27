@@ -1,16 +1,16 @@
 package com.blz.java;
 
-public class TestMaximum <T extends Comparable<T>>{
-    private T x,y,z;
+public class TestMaximum{
+    int x,y,z;
 //constructor
-    public TestMaximum(T x, T y, T z) {
+    public TestMaximum(int x, int y, int z) {
         this.x = x;
         this.y = y;
         this.z = z;
     }
-//checking max of three Generic data
-    public static<T extends Comparable<T>> T testMaximum(T x,T y,T z){
-        T max=x;//Initializing x as greater
+//checking max of three integers
+    public static Float testMaximum(Float x,Float y,Float z){
+        Float max=x;//Initializing x as greater
         if(y.compareTo(max)>0)
             max=y;//as of now y is greater
 
@@ -20,7 +20,7 @@ public class TestMaximum <T extends Comparable<T>>{
         return max;
 
     }
-    public static <T>void printMax(T x,T y,T z,T max){
+    public static void printMax(Float x,Float y,Float z,Float max){
         System.out.printf("the max of %s , %s and %s is %s\n",x,y,z,max);
     }
 }
